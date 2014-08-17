@@ -1,5 +1,6 @@
 auto: true
-destination: kaylalewis.github.io/toydesign
+url: "http://kaylalewis.github.io/toydesign/"
+baseurl: "/toydesign"
 markdown: kramdown
 
 
