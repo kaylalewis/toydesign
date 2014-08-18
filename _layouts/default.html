@@ -41,22 +41,22 @@
     <![endif]-->
 
     <!-- stylesheet -->
-    <link rel="stylesheet" href="css/kraken.css" type="text/css" />
-    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/kraken.css" type="text/css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css" type="text/css">
 </head>
 <body>
   <header>
-    <a href ="/"><img src="img/banner.png"></a>
-  </header>
-  <div class="grid-full float-left">
+    <a href ="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/img/banner.png"></a>
+ <div class="grid-full float-left">
     <ul class="list-unstyled">
       <div class ="list">
-        <li><a href="projects/">Projects</a></li>
-        <li><a href="magazine/">Catalogue</a></li>
-        <li><a href="resources/">Resources</a></li>
+        <li><a href="{{ site.baseurl }}/projects">Projects</a></li>
+        <li><a href="{{ site.baseurl }}/magazine">Catalogue</a></li>
+        <li><a href="{{ site.baseurl }}/resources">Resources</a></li>
       </div>
     </ul>
   </div>
+    </header>
   <div class ="container">
     {{ content }}
   </div>
