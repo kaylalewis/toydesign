@@ -1,0 +1,15 @@
+---
+layout: page
+title: Projects
+---
+
+<h1> 3D Printed Toys </h1>
+<div class="row">
+{% for post in site.posts %}
+		{% if post.category == "toys" %}
+		<div class="grid-img">
+		<p><a href="{{ site.baseurl }}{{ post.url }}"><img src="{{ post.image }}"></a></p>
+	</div>
+		{% endif %}
+{% endfor %}
+</div>
