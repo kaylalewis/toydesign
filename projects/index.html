@@ -4,9 +4,28 @@ title: Projects
 ---
 
 <h1> 3D Printed Toys </h1>
+<p>The class was based around the creation of a character that was 3D printed and then painted. Students also designed packaging for the characters to present them as actual products.</p>
+<br>
+
 <div class="row">
 {% for post in site.posts %}
 		{% if post.category == "toys" %}
+		<div class="grid-img">
+		<p><a href="{{ site.baseurl }}{{ post.url }}"><img src="{{ post.image }}"></a></p>
+	</div>
+		{% endif %}
+{% endfor %}
+</div>
+
+<br>
+
+<h1> Company Logos </h1>
+<p>Students broke into four groups to create a toy company and plan logos and characteristics. They were responsible for designing a toy and making a pitch to advertise it.</p>
+<br>
+
+<div class="row">
+{% for post in site.posts %}
+		{% if post.category == "logos" %}
 		<div class="grid-img">
 		<p><a href="{{ site.baseurl }}{{ post.url }}"><img src="{{ post.image }}"></a></p>
 	</div>
