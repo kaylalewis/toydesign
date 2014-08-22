@@ -4,15 +4,17 @@ title: Catalogue
 ---
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js">
 	</script>
-<script type="text/javascript" src="../js/hey.js/turn.min.js">
+<script type="text/javascript" src="{{ site.baseurl }}/js/hey.js/turn.min.js">
 	</script>
 <p> Catalogue of class designs. </p>
 
   <div id="magazine">
-			{% for post in site.tags.magazine %}
+			{% for post in site.posts %}
+		{% if post.category == "magazine" %}
  				<li>
 					{{post.content}}
       			</li>
+      			{% endif %}
 			{% endfor %}
 		</div>
 
